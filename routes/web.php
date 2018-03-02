@@ -37,3 +37,7 @@ Route::get('herencia}', function (){
 
 Route::post('herencia2',['uses'=>'MiControlador@inicio']);
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
